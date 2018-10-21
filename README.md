@@ -57,9 +57,22 @@ drivers in a given area. You need to build 2 APIs to achieve this.
 
 You will need:
 
+#### System Requirement:
+
+- MacOS or a Linux server running on CentOS, Ubuntu, or Red Hat Enterprise Linux 7 (RHEL7).
+- NodeJS v8 or greater.
+- NPM v6 or greater.
+
+#### Required dependencies:
+
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 
+#### Optional dependencies:
+
+- [Oracle virtualbox](https://www.virtualbox.org/wiki/Downloads) - To spawn virtual machine from chef script.
+- [Vagrant](https://www.vagrantup.com/docs/installation/) - For Vagrant CLI.
+- [ChefDK](https://docs.chef.io/install_dk.html) - For Chef Script Deployment.
 
 ## Versioning
 
