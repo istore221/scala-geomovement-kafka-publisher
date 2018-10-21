@@ -111,6 +111,8 @@ $ npm run test
 
 ApacheBench is a single-threaded command line computer program for measuring the performance of HTTP web servers.
 
+1. Generate 10000 requests with a concurrency of 100 on `/api/v1/drivers`
+
 ```bash
 $ ab -n 1000 -c 100 -r http://127.0.0.1/api/v1/drivers?latitude=6.967121010218704&longitude=79.90078551661679
 ```
