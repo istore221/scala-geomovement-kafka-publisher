@@ -58,13 +58,15 @@ drivers in a given area. You need to build 2 APIs to achieve this.
 
 # Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 ## Prerequisites
 
 You will need:
 
 #### System Requirement:
 
-- MacOS or a Linux server running on CentOS, Ubuntu, or Red Hat Enterprise Linux 7 (RHEL7).
+- OSX (macOS) or a Linux server running on CentOS, Ubuntu, or Red Hat Enterprise Linux 7 (RHEL7).
 - [NodeJS](https://nodejs.org/en/) v8 or greater.
 - [Npm](https://www.npmjs.com/) v6 or greater.
 
@@ -85,6 +87,14 @@ You will need:
 - [ChefDK](https://docs.chef.io/install_dk.html) - For Chef Script Deployment.
 
 
+## Setting Up:
+
+Clone this repo to your desktop or download the tar archive, and run `./startup.sh` on project root dir.
+
+```bash
+$ cd where-is-my-go-jek-driver
+$ ./startup.sh
+```
 
 ## Versioning
 
