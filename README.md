@@ -166,6 +166,7 @@ $ cd where-is-my-go-jek-driver-cookbook
 $ vagrant plugin install vagrant-vbguest
 $ berks install
 $ kitchen create
+$ kitchen converge
 $ kitchen login
 $ git clone https://gitlab.com/istore221/where-is-my-go-jek-driver.git
 $ cd where-is-my-go-jek-driver
