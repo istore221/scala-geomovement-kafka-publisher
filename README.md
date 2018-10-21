@@ -100,7 +100,7 @@ $ ./startup.sh
 
 Automated tests for this system is performed when you run `./startup.sh` if you want to run tests by your own please make sure your run following commands. 
 
-Note: Test coverage results can be found at /coverage/coverage.html
+Note: Test coverage results can be found at `/coverage/coverage.html`
 
 ```bash
 $ docker run -d --name where_is_my_go_jek_driver_mongodb -p 27017:27017 -v ~/data:/data/db --restart always mongo:3.6.2
@@ -115,6 +115,45 @@ ApacheBench is a single-threaded command line computer program for measuring the
 
 ```bash
 $ ab -n 1000 -c 20 -r http://127.0.0.1/api/v1/drivers?latitude=6.967121010218704&longitude=79.90078551661679
+
+Server Software:        nginx/1.15.5
+Server Hostname:        127.0.0.1
+Server Port:            80
+
+Document Path:          /api/v1/drivers?latitude=6.967121010218704
+Document Length:        264 bytes
+
+Concurrency Level:      100
+Time taken for tests:   0.727 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      1000
+Total transferred:      472000 bytes
+HTML transferred:       264000 bytes
+Requests per second:    1374.76 [#/sec] (mean)
+Time per request:       72.740 [ms] (mean)
+Time per request:       0.727 [ms] (mean, across all concurrent requests)
+Transfer rate:          633.68 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.5      0       2
+Processing:     4   69  13.4     68      96
+Waiting:        2   69  13.5     68      96
+Total:          4   69  13.2     68      96
+
+Percentage of the requests served within a certain time (ms)
+  50%     68
+  66%     71
+  75%     75
+  80%     80
+  90%     85
+  95%     91
+  98%     93
+  99%     94
+ 100%     96 (longest request)
+
 ```
 
 ## Kill the application
