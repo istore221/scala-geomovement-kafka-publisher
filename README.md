@@ -114,6 +114,11 @@ To stop the application from running please run `./stop.sh` on project root dir.
 $ ./stop.sh
 ```
 
+## Deploy infrastructure using Chef (Optional)
+
+Optional dependencies are requried to run chef on the system.chef scripts will setup all the infrastructure requirements like Git,Docker,Docker compose on a Vagrant box so that applicatin can be deployed instantly.
+
+
 ## Versioning
 
 I'hv use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://gitlab.com/istore221/where-is-my-go-jek-driver/tags). 
