@@ -56,6 +56,8 @@ drivers in a given area. You need to build 2 APIs to achieve this.
   * Vagrant was spawned by Chef Kitchen as development and deployment environment to automate and test out the chef scripts.
 
 
+# Getting Started
+
 ## Prerequisites
 
 You will need:
