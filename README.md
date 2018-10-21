@@ -107,6 +107,13 @@ $ docker run -d --name where_is_my_go_jek_driver_mongodb -p 27017:27017 -v ~/dat
 $ npm install 
 $ npm run test
 ```
+## Load Testing
+
+ApacheBench is a single-threaded command line computer program for measuring the performance of HTTP web servers.
+
+```bash
+$ ab -n 1000 -c 100 -r http://127.0.0.1/api/v1/drivers?latitude=6.967121010218704&longitude=79.90078551661679
+```
 
 ## Kill the application
 
@@ -145,7 +152,6 @@ After you deploy the application you can use any REST client to consume the endp
   -H 'Cache-Control: no-cache' \
   -H 'Content-Type: application/json'
    ```
-
 
 ## Deploy infrastructure using Chef (Optional)
 
