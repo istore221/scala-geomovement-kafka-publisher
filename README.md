@@ -118,6 +118,26 @@ $ ./stop.sh
 
 Optional dependencies are requried to run chef on the system.chef scripts will setup all the infrastructure requirements like Git,Docker,Docker compose on a Vagrant box so that applicatin can be deployed instantly.
 
+### Optional dependencies:
+
+- [Oracle virtualbox](https://www.virtualbox.org/wiki/Downloads) - To spawn virtual machine from chef script.
+- [Vagrant](https://www.vagrantup.com/docs/installation/) - For Vagrant CLI.
+- [ChefDK](https://docs.chef.io/install_dk.html) - For Chef Script Deployment.
+
+### Setting things Up:
+
+Clone this [Repo](https://gitlab.com/istore221/where-is-my-go-jek-driver-cookbook.git) to your desktop or download the tar archive, and run following commands to deploy the infrastructure.
+
+```bash
+$ cd where-is-my-go-jek-driver-cookbook
+$ vagrant plugin install vagrant-vbguest
+$ berks install
+$ kitchen create
+$ kitchen login
+$ git clone https://gitlab.com/istore221/where-is-my-go-jek-driver.git
+$ cd where-is-my-go-jek-driver
+$ ./startup.sh
+```
 
 ## Versioning
 
