@@ -87,13 +87,23 @@ You will need:
 - [ChefDK](https://docs.chef.io/install_dk.html) - For Chef Script Deployment.
 
 
-## Setting Up:
+## Setting Up
 
 Clone this repo to your desktop or download the tar archive, and run `./startup.sh` on project root dir.
 
 ```bash
 $ cd where-is-my-go-jek-driver
 $ ./startup.sh
+```
+
+## Running the tests
+
+Automated tests for this system is performed when you run `./startup.sh` if you want to run tests by your own please make sure your run following commands. 
+
+```bash
+$ docker run -d --name where_is_my_go_jek_driver_mongodb -p 27017:27017 -v ~/data:/data/db --restart always mongo:3.6.2
+$ npm install 
+$ npm run test
 ```
 
 ## Versioning
