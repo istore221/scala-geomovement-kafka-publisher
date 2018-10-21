@@ -116,6 +116,37 @@ To stop the application from running please run `./stop.sh` on project root dir.
 $ ./stop.sh
 ```
 
+## Usage
+
+After you deploy the application you can use any REST client to consume the endpoints.
+
+- Drivers should be able to send their current location every 60 seconds. They’ll call following API to update their location:
+
+
+   ```
+    curl -X PUT \
+      http://127.0.0.1/api/v1/drivers/1/location \
+      -H 'Cache-Control: no-cache' \
+      -H 'Content-Type: application/json' \
+       -d '{
+     "driver":"john smith",
+     "accuracy": 1,
+     "latitude": 6.967121010218704 ,
+     "longitude": 79.90078551661679
+    }'
+   ```
+
+- Customer applications will use following API to find drivers around a given location:
+
+
+   ```
+  curl -X GET \
+  'http://127.0.0.1/api/v1/drivers?latitude=6.967121010218704&longitude=79.90078551661679' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/json'
+   ```
+
+
 ## Deploy infrastructure using Chef (Optional)
 
 Optional dependencies are requried to run chef on the system.chef scripts will setup all the infrastructure requirements like Git,Docker,Docker compose on a Vagrant box so that applicatin can be deployed instantly.
