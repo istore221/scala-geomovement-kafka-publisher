@@ -23,6 +23,9 @@ drivers in a given area. You need to build 2 APIs to achieve this.
 * [Javascript](https://www.javascript.com/) - The language 
   * Ease of integration with MongoDB and maybe later on with various front end frameworks like ReactJS,Anguler,also you can reduce the amount of time and efforts required for developing JS based apps.
 
+* [NodeJS](https://nodejs.org/en/) - The Runtime 
+  * Node.js® is a JavaScript runtime built on V8 JavaScript engine.
+
 * [Hapi](https://hapijs.com/) - The web framework
   * Easy-to-use APIs/Plugins, highly modular architecture, and can support application as it grows potentially very large.HapiJS powered [Walmart](https://www.walmart.com/) mobile APIs which is very promising in terms of scalability and performance.
 
@@ -60,8 +63,13 @@ You will need:
 #### System Requirement:
 
 - MacOS or a Linux server running on CentOS, Ubuntu, or Red Hat Enterprise Linux 7 (RHEL7).
-- NodeJS v8 or greater.
-- NPM v6 or greater.
+- [NodeJS](https://nodejs.org/en/) v8 or greater.
+- [Npm](https://www.npmjs.com/) v6 or greater.
+
+#### Required Ports:
+
+- <b>Port 80 must be available</b> from host operating system to run the Nginx Container.
+- <b>Port 27017 must be available</b> from host operating system to run the MongoDB Container.
 
 #### Required dependencies:
 
@@ -73,6 +81,8 @@ You will need:
 - [Oracle virtualbox](https://www.virtualbox.org/wiki/Downloads) - To spawn virtual machine from chef script.
 - [Vagrant](https://www.vagrantup.com/docs/installation/) - For Vagrant CLI.
 - [ChefDK](https://docs.chef.io/install_dk.html) - For Chef Script Deployment.
+
+
 
 ## Versioning
 
