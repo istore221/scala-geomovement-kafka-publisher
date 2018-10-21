@@ -100,6 +100,8 @@ $ ./startup.sh
 
 Automated tests for this system is performed when you run `./startup.sh` if you want to run tests by your own please make sure your run following commands. 
 
+Note: Test coverage results can be found at /coverage/coverage.html
+
 ```bash
 $ docker run -d --name where_is_my_go_jek_driver_mongodb -p 27017:27017 -v ~/data:/data/db --restart always mongo:3.6.2
 $ npm install 
