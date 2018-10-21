@@ -57,6 +57,8 @@ drivers in a given area. You need to build 2 APIs to achieve this.
 
 You will need:
 
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
 
 
 ## Versioning
