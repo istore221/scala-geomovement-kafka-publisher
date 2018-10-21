@@ -89,7 +89,7 @@ You will need:
 
 ## Setting things Up
 
-Clone this repo to your desktop or download the tar archive, and run `./startup.sh` on project root dir.
+Clone this repo to your desktop or download the tar archive `where-is-my-go-jek-driver-master.tar.gz`, and run `./startup.sh` on project root dir.
 
 ```bash
 $ cd where-is-my-go-jek-driver
@@ -159,7 +159,7 @@ Optional dependencies are requried to run chef on the system.chef scripts will s
 
 ### Setting things Up:
 
-Clone this [Repo](https://gitlab.com/istore221/where-is-my-go-jek-driver-cookbook.git) to your desktop or download the tar archive, and run following commands to deploy the infrastructure.
+Clone this [Repo](https://gitlab.com/istore221/where-is-my-go-jek-driver-cookbook.git) or download tar file `where-is-my-go-jek-driver-cookbook.tar.gz` to your desktop or download the tar archive, and run following commands to deploy the infrastructure.
 
 ```bash
 $ cd where-is-my-go-jek-driver-cookbook
