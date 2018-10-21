@@ -107,14 +107,14 @@ $ docker run -d --name where_is_my_go_jek_driver_mongodb -p 27017:27017 -v ~/dat
 $ npm install 
 $ npm run test
 ```
-## Load Testing
+## Running Load tests
 
 ApacheBench is a single-threaded command line computer program for measuring the performance of HTTP web servers.
 
-1. Generate 10000 requests with a concurrency of 100 on `/api/v1/drivers`
+1. Generate 10000 requests with a concurrency of 20 on `/api/v1/drivers`
 
 ```bash
-$ ab -n 1000 -c 100 -r http://127.0.0.1/api/v1/drivers?latitude=6.967121010218704&longitude=79.90078551661679
+$ ab -n 1000 -c 20 -r http://127.0.0.1/api/v1/drivers?latitude=6.967121010218704&longitude=79.90078551661679
 ```
 
 ## Kill the application
