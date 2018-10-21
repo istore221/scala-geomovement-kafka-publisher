@@ -120,7 +120,7 @@ $ ./stop.sh
 
 After you deploy the application you can use any REST client to consume the endpoints.
 
-- Drivers should be able to send their current location every 60 seconds. They’ll call following API to update their location:
+- <b>Driver Location</b> : Drivers should be able to send their current location every 60 seconds. They’ll call following API to update their location:
 
 
    ```
@@ -136,7 +136,7 @@ After you deploy the application you can use any REST client to consume the endp
     }'
    ```
 
-- Customer applications will use following API to find drivers around a given location:
+- <b>Find Drivers</b> : Customer applications will use following API to find drivers around a given location:
 
 
    ```
